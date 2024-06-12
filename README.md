@@ -1,4 +1,4 @@
-# [From Data to Visualization with the OpenAI Assistants API and GPT-4o](#link)
+# [From Data to Visualization with the OpenAI Assistants API and GPT-4o](https://medium.com/towards-data-science/from-data-to-visualization-with-the-openai-assistants-api-and-gpt-4o-69af0cac5118?sk=f275220dabaff7c9d8f2e2a4bf3296ff)
 
 ## We explore the Code Completion tool from OpenAI's Assistants API to create visualizations directly from data
 
