@@ -18,6 +18,16 @@ _Files_
 - ``asst_utils.py`` is an implementation of the original Jupter Note code in the form of a library class.
 - ``.streamlit`` this folder does not exist in the repo but should be present and contain a Streamlit secrets file that contains a vaild OpenAI API key
 
+### _Important note! You must read this before running the code._ 
+
+In the file ``asst_utils.py`` beginning on line 98 you will see that the method that runs the model has a `return` statement inserted at the beginning meaning that the code in this method will not be called. This is deliberate - the idea being that you will not accidentally be spending money until you are happy that the app is running. When you have the code running, comment out or delete this line.
+
+    def run_assistant_and_wait_for_result(self, assistant, thread, status_field, display_messages = False):
+            # comment out the next line to run the model
+            # uncomment it for debugging so the model does not run
+            return 
+            id = self.get_image_file()
+            if id: self.client.files.delete(id)
 
 ---
 ### If you find this content useful, please consider one or more of the following:

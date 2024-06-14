@@ -17,7 +17,6 @@ _Files_
 - ``show_data.ipynb`` is simply so that I could get a screenshot of the dataframe
 - the `.png` files are the output from the code.
 
-
 ---
 ### If you find this content useful, please consider one or more of the following:
 
