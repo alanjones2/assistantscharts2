@@ -16,6 +16,7 @@ _Files_
 - ``world_cf.csv`` is the data file
 - ``meals2.csv`` is a data file
 - ``asst_utils.py`` is an implementation of the original Jupter Note code in the form of a library class.
+- ``.streamlit`` this folder does not exist in the repo but should be present and contain a Streamlit secrets file that contains a vaild OpenAI API key
 
 
 ---
