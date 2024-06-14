@@ -5,7 +5,6 @@
 
 This folder contains the code and data to support the article above - in particular, it implements a Streamlit app based on the original code (see parent folder).
 
-
 ## Description and files
 
 We explore chart creation using OpenAI's Assistants and Code Interpreter.
@@ -18,7 +17,7 @@ _Files_
 - ``asst_utils.py`` is an implementation of the original Jupter Note code in the form of a library class.
 - ``.streamlit`` this folder does not exist in the repo but should be present and contain a Streamlit secrets file that contains a vaild OpenAI API key
 
-### _Important note! You must read this before running the code._ 
+### _Important note number 1! You must read this before running the code._ 
 
 In the file ``asst_utils.py`` beginning on line 98 you will see that the method that runs the model has a `return` statement inserted at the beginning meaning that the code in this method will not be called. This is deliberate - the idea being that you will not accidentally be spending money until you are happy that the app is running. When you have the code running, comment out or delete this line.
 
@@ -28,6 +27,10 @@ In the file ``asst_utils.py`` beginning on line 98 you will see that the method 
             return 
             id = self.get_image_file()
             if id: self.client.files.delete(id)
+
+### _Important note number 2!_
+
+There is a facility to deleted the files that are created by the assistant. __*THIS IS DESTRUCTIVE*__. It will delete __*ALL*__ files no matter when they were created and no matter which assistant created them, so use with care. If you are not sure, then delete unwanted files with the OpenAI dashboard.
 
 ---
 ### If you find this content useful, please consider one or more of the following:
@@ -40,5 +43,7 @@ In the file ``asst_utils.py`` beginning on line 98 you will see that the method 
 <a href='https://ko-fi.com/M4M64THKG' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 ---
+
+_MIT licensed - if you use this code publicly then attribution is not necessary but is appreciated._
 
 _Please note that the code in this repo is for educational and demonstration purposes. It should not be considered suitable for production._
